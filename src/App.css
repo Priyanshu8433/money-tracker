@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #070f2b;
+  color: #c9c8e1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  max-width: 400px;
+  margin: 10rem auto;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 64px;
+
+  padding: 12px;
+}
+
+h1 span {
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 32px;
+}
+
+form input {
+  background-color: transparent;
+  border: 2px solid #585675;
+  color: #b3b1d5;
+  padding: 7px 5px;
+  border-radius: 5px;
+}
+
+form input::placeholder,
+form input[type="datetime-local"] {
+  color: #9290c3;
+  font-size: 14px;
+}
+
+.basic {
+  display: flex;
+  gap: 5px;
+  /* justify-content: space-between; */
+}
+
+.basic input {
+  /* display: flex; */
+  flex: 1;
+  /* flex-shrink: 1; */
+}
+
+.description input {
+  margin-top: 7px;
+  width: 100%;
+}
+
+button {
+  background-color: #b3b1d5;
+  margin-top: 14px;
+  font-size: 18px;
+  color: #070f2b;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 5px;
+}
+
+.transactions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.transaction:first-child {
+  border: none;
+}
+
+.transaction {
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+
+  border-top: 1px solid #585675;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  /* font-size: 14px; */
+  align-items: end;
+}
+
+.green {
+  color: #1c1;
+}
+
+.red {
+  color: #c11;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.description {
+  font-size: 12px;
+  color: #9290c3;
+}
+
+.datetime {
+  font-size: 12px;
+  color: #9290c3;
+}
